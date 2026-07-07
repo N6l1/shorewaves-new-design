@@ -126,26 +126,7 @@ section { padding: 72px 0; }
 
 .brand { display: flex; align-items: center; gap: 12px; }
 
-.brand-mark {
-  width: 46px; height: 46px; flex: none;
-  background: var(--blue);
-  border-radius: 11px;
-  position: relative;
-  display: grid; place-items: center;
-  overflow: hidden;
-}
-
-.brand-mark .s {
-  font-size: 1.9rem; font-weight: 800; color: var(--yellow);
-  line-height: 1; transform: translate(-3px, -1px);
-}
-
-.brand-mark .w {
-  position: absolute;
-  right: 4px; bottom: 2px;
-  font-size: 1.05rem; font-weight: 800; color: var(--white);
-  line-height: 1;
-}
+.brand-logo { width: 46px; height: 46px; flex: none; }
 
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-text strong { font-size: 1.02rem; font-weight: 700; color: var(--ink); letter-spacing: 0.5px; }
@@ -960,17 +941,11 @@ section { padding: 72px 0; }
   transform: rotate(18deg);
 }
 
-.split-visual .big-mark {
+.split-visual .big-logo {
   position: relative;
-  width: 130px; height: 130px;
-  background: var(--blue-deep);
-  border-radius: 26px;
-  display: grid; place-items: center;
-  box-shadow: var(--shadow-lg);
+  width: 150px; height: 150px;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.28));
 }
-
-.split-visual .big-mark .s { font-size: 4.4rem; font-weight: 800; color: var(--yellow); line-height: 1; transform: translate(-8px, -2px); }
-.split-visual .big-mark .w { position: absolute; right: 14px; bottom: 10px; font-size: 2.1rem; font-weight: 800; color: var(--white); line-height: 1; }
 
 /* ---------- Facilities list ---------- */
 .facility-list { display: grid; gap: 16px; margin-top: 10px; }
@@ -1004,19 +979,39 @@ section { padding: 72px 0; }
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  min-height: 120px;
-  display: grid;
-  place-items: center;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
   text-align: center;
-  padding: 22px 18px;
+  padding: 24px 18px;
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   color: var(--blue-deep);
   letter-spacing: 0.5px;
   box-shadow: var(--shadow);
   position: relative;
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-tile img {
+  max-height: 60px;
+  max-width: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+.partner-mono {
+  width: 60px; height: 60px; flex: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+  color: var(--white);
+  display: grid; place-items: center;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .partner-tile::after {
