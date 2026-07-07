@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalog | Shore Waves Trading Est — Chemical Division</title>
+  <meta name="description" content="Searchable catalog of 40+ industrial chemicals: commodity chemicals, solvents, boiler & chiller treatments, R.O. anti-scalants, membranes, dosing pumps, and filters — stocked in Dhahran, Saudi Arabia.">
+  <meta property="og:title" content="Product Catalog — Shore Waves Trading Est">
+  <meta property="og:description" content="40+ industrial chemicals and water treatment products stocked in Dhahran. Search, filter, and request a quote.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.shorewaves.com.sa/products.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231AA7E8'/%3E%3Ctext x='10' y='48' font-family='Arial' font-size='46' font-weight='800' fill='%23F5E11A'%3ES%3C/text%3E%3Ctext x='34' y='58' font-family='Arial' font-size='26' font-weight='800' fill='white'%3EW%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Shore Waves Trading Est — home">
+        <span class="brand-mark" aria-hidden="true"><span class="s">S</span><span class="w">W</span></span>
+        <span class="brand-text">
+          <strong>SHORE WAVES</strong>
+          <small>Trading Est &mdash; Chemicals</small>
+        </span>
+      </a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="products.html" class="active" aria-current="page">Products</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Request a Quote</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Product Catalog</h1>
+        <p>Environmentally friendly, cost-effective chemical treatment solutions and stocked industrial chemicals — search, filter, and request a quote in one click.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="catalog-title">
+      <div class="container">
+        <span class="section-kicker">What We Stock</span>
+        <h2 id="catalog-title" class="section-title">Chemicals &amp; Equipment</h2>
+        <p class="section-lead">Shore Waves provides environmentally friendly, cost-effective chemical treatment solutions and stocks industrial chemicals and solvents for <strong>Reverse Osmosis Plants</strong>, <strong>Domestic &amp; Drinking Water and Wastewater</strong>, <strong>Boiler Systems</strong>, <strong>Cooling Towers</strong>, and <strong>Chilled &amp; Hot Water systems</strong>.</p>
+
+        <div class="product-tools">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            <input type="search" id="product-search" placeholder="Search products, applications, origins&hellip;" aria-label="Search products">
+          </div>
+          <div class="filter-chips" role="group" aria-label="Filter products by category">
+            <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+            <button class="chip" data-filter="commodity" aria-pressed="false">Commodity Chemicals</button>
+            <button class="chip" data-filter="solvents" aria-pressed="false">Solvents</button>
+            <button class="chip" data-filter="boiler" aria-pressed="false">Boiler Treatment</button>
+            <button class="chip" data-filter="chiller" aria-pressed="false">Chiller Treatment</button>
+            <button class="chip" data-filter="water" aria-pressed="false">Water Treatment</button>
+            <button class="chip" data-filter="ro" aria-pressed="false">R.O / Desalination</button>
+            <button class="chip" data-filter="equipment" aria-pressed="false">Equipment</button>
+          </div>
+        </div>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="table-wrap">
+          <table class="product-table">
+            <caption class="skip-link">Product catalog with packing, application, origin, and quote request links</caption>
+            <thead>
+              <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Packing</th>
+                <th scope="col">Application / Industry</th>
+                <th scope="col">Origin</th>
+                <th scope="col"><span class="skip-link">Actions</span>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody id="product-rows">
+              <!-- Rows rendered by js/main.js; this row shows only if JS is disabled -->
+              <tr><td colspan="5">Loading catalog&hellip; If this message persists, please enable JavaScript or <a href="contact.html">contact us</a> for a full product list.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="margin-top:34px;">Can't find what you need? We import globally on request. <a href="contact.html" class="btn btn-accent" style="margin-left:10px;">Request a Quote</a></p>
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-labelledby="cta-title">
+      <div class="container">
+        <div>
+          <h2 id="cta-title">Need Bulk Pricing?</h2>
+          <p>IBC, drum, or full-truck quantities — we'll quote it the same day.</p>
+        </div>
+        <a href="contact.html" class="btn">Contact Sales</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-mark" aria-hidden="true"><span class="s">S</span><span class="w">W</span></span>
+            <span class="brand-text">
+              <strong>SHORE WAVES</strong>
+              <small>Trading Est &mdash; Chemicals</small>
+            </span>
+          </div>
+          <p>ISO-certified chemical trading company headquartered in Dhahran, serving Saudi industry since 1989.</p>
+          <span class="footer-motto">One Source for Multiple Choice</span>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>ISO 9001:2015 — Quality</li>
+            <li>ISO 14001:2015 — Environment</li>
+            <li>ISO 45001:2018 — Health &amp; Safety</li>
+            <li>Certified by LEMS Certifications</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+966138089988">+966-13 808 9988</a></li>
+            <li><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></li>
+            <li>Building 7055, Halfmoon Beach Road,<br>Dhahran 34521-2902, Saudi Arabia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="footer-year">2026</span> Shore Waves Trading Est — Chemical Division. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="floaters">
+    <a href="tel:+966138089988" class="float-call" aria-label="Call us at +966 13 808 9988">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a href="contact.html" class="float-quote">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>Request a Quote</span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
