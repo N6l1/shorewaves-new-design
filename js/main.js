@@ -102,8 +102,10 @@
     { name: 'Methyl Ethyl Ketone (MEK)', packing: '165 Kg/Drum', app: 'Solvent', origin: 'Netherlands', cats: ['solvents'] },
     { name: 'Toluene', packing: '180 Kg/Drum', app: 'Solvent', origin: 'Taiwan', cats: ['solvents'] },
     { name: 'Ethanol 96%', packing: '165 Kg/Drum', app: 'Solvent', origin: 'Pakistan', cats: ['solvents'] },
+    { name: 'Ethanol 99.8%', packing: '165 Kg/Drum', app: 'Perfume Industry', origin: 'Pakistan', cats: ['solvents'] },
     { name: 'Methanol 99.9%', packing: '165 Kg/Drum', app: 'Solvent', origin: 'KSA', cats: ['solvents'] },
     { name: 'Acetone (SASOL)', packing: '160 Kg/Drum', app: 'Solvent', origin: 'South Africa', cats: ['solvents'] },
+    { name: 'Perchloroethylene', packing: '330 Kg/Drum', app: 'Cleaning / Textile Industry', origin: 'Europe / China', cats: ['solvents'] },
     { name: 'Boiler Compound Achilles SW 100B', packing: '25 Kg/Drum', app: 'Boiler Treatment', origin: 'KSA', cats: ['boiler'] },
     { name: 'Oxygen Scavenger Achilles SW 106B', packing: '25 Kg/Drum', app: 'Boiler Treatment', origin: 'KSA', cats: ['boiler'] },
     { name: 'pH Booster Achilles SW 136B', packing: '25 Kg/Drum', app: 'Boiler Treatment', origin: 'KSA', cats: ['boiler'] },
@@ -124,7 +126,8 @@
     { name: 'Cartridge Filter 10", 5 Micron', packing: '—', app: 'Water Treatment', origin: 'China', cats: ['equipment', 'water'] },
     { name: 'Calcium Hypo Hi-Clear', packing: '45 Kg/Drum', app: 'Water Treatment', origin: 'India', cats: ['water'] },
     { name: 'Trichloroisocyanuric Acid (TCCA) 90% Tablet', packing: '50 Kg/Drum', app: 'Water Treatment', origin: 'India', cats: ['water'] },
-    { name: 'Ferric Chloride 40%', packing: '300 Kg/Drum', app: 'Commodity Chemicals', origin: 'India', cats: ['commodity'] }
+    { name: 'Ferric Chloride 40%', packing: '300 Kg/Drum', app: 'Commodity Chemicals', origin: 'India', cats: ['commodity'] },
+    { name: 'Phosphoric Acid 85% Food Grade', packing: '1650 Kg/IBC & 35 Kg/Can', app: 'Food Industry / Paper Industry', origin: 'China', cats: ['commodity'] }
   ];
 
   // Expose for the contact page dropdown
