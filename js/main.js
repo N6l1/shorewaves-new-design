@@ -1,5 +1,5 @@
 /* ============================================================
-   Shore Waves Trading Est — Chemical Division
+   Shore Waves Trading Company — Chemical Division
    Shared site scripts + page-specific logic (vanilla JS)
    ============================================================ */
 (function () {
