@@ -276,7 +276,7 @@ body.menu-open .site-header {
   gap: 10px;
 }
 
-.brand-mark { width: 30px; height: 30px; flex: none; }
+.brand-mark { width: 34px; height: 34px; flex: none; object-fit: contain; }
 
 .brand-word {
   font-family: var(--font-display);
