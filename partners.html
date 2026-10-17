@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Partners | Shore Waves Trading Company — Chemical Division</title>
   <meta name="description" content="Shore Waves' satisfied business partners include Weatherford, Jotun, Sigma Paints, SRACO, Eastern Cement, Yamama Cement, Al Safi, and more leading Saudi companies.">
+  <meta name="theme-color" content="#f5f4df">
   <meta property="og:title" content="Our Satisfied Business Partners — Shore Waves Trading Company">
   <meta property="og:description" content="Leading Saudi companies trust Shore Waves for reliable chemical supply.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.shorewaves.com.sa/partners.html">
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,68 +21,86 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
-        <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-        <span class="brand-text">
-          <strong>SHORE WAVES</strong>
-          <small>Trading Company &mdash; Chemicals</small>
-        </span>
-      </a>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="partners.html" class="active" aria-current="page">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Request a Quote</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="label">Menu</span>
+        <span class="sr-only">Toggle navigation menu</span>
       </button>
+      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg>
+        <span class="brand-word">Shore Waves<small>Chemicals</small></span>
+      </a>
+      <a class="nav-link" href="contact.html"><span class="label">Get a quote</span><span class="label-short">Quote</span> <span aria-hidden="true">&#8599;</span></a>
     </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <div class="container menu-grid">
+        <ul class="menu-links">
+            <li><a href="index.html">Home<span>01</span></a></li>
+            <li><a href="about.html">About<span>02</span></a></li>
+            <li><a href="industries.html">Industries<span>03</span></a></li>
+            <li><a href="products.html">Products<span>04</span></a></li>
+            <li><a href="partners.html" aria-current="page">Partners<span>05</span></a></li>
+            <li><a href="contact.html">Contact<span>06</span></a></li>
+        </ul>
+        <div class="menu-aside">
+          <p>ISO-certified chemical trading, Dhahran. Serving Saudi industry since 1989.</p>
+          <p><a href="tel:+966138089988">+966 13 808 9988</a><br><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></p>
+          <a href="contact.html" class="btn">Request a quote <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <h1>Our Satisfied Business Partners</h1>
-        <p>Leading names across oil &amp; gas, paints, cement, and industrial services trust Shore Waves for consistent, safe chemical supply.</p>
+    <section class="hero page" aria-labelledby="page-title">
+      <img class="hero-media" src="assets/scenes/port.svg" alt="Container cranes and a cargo ship at a Gulf port at dawn">
+      <div class="container hero-inner">
+        <span class="kicker">Our partners</span>
+        <h1 id="page-title">Trusted by<br>industry.</h1>
+        <div class="hero-foot">
+          <div></div>
+          <div class="caption-block">
+            <p>Leading names across oil &amp; gas, paints, cement and industrial services rely on Shore Waves for consistent, safe chemical supply.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section aria-labelledby="partners-title">
+    <section class="section" aria-labelledby="partners-title">
       <div class="container">
-        <span class="section-kicker">Social Proof</span>
-        <h2 id="partners-title" class="section-title">Companies That Trust Us</h2>
-        <p class="section-lead">A partnership with Shore Waves means dependable quality, on-time delivery, and a single source for multiple choice.</p>
+        <div class="section-head">
+          <div>
+            <span class="kicker">Satisfied business partners</span>
+            <h2 id="partners-title" class="heading">Companies that trust us.</h2>
+          </div>
+          <p class="lead">Partnering with Shore Waves means dependable quality, on-time delivery, and a single source for multiple choice.</p>
+        </div>
         <div class="partner-grid">
-          <div class="partner-tile reveal"><img src="assets/partners/weatherford.png" alt="Weatherford logo"><span>Weatherford</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/jotun.png" alt="Jotun logo"><span>Jotun<small>Colour Mirage Painting</small></span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/sigma-paints.png" alt="Sigma Paints logo"><span>Sigma Paints</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/oscar-paints.png" alt="Oscar Paints logo"><span>Oscar Paints</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/al-safi.svg" alt="Al Safi logo"><span>Al Safi</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/tamimi.png" alt="Tamimi Industrial Services logo"><span>Tamimi Industrial Services</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/zain-industries.jpg" alt="Zain Industries logo"><span>Zain Industries</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/sraco.png" alt="SRACO logo"><span>SRACO</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/eastern-cement.png" alt="Eastern Province Cement Company logo"><span>Eastern Cement</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/yamama-cement.png" alt="Yamama Cement logo"><span>Yamama Cement</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/midad.png" alt="Midad Chemicals logo"><span>Midad Chemicals</span></div>
-          <div class="partner-tile reveal"><img src="assets/partners/brc.png" alt="BRC Group of Companies logo"><span>BRC Industrial (Saudia) Limited</span></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/weatherford.png" alt="Weatherford logo" loading="lazy"></div><div class="name">Weatherford</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/jotun.png" alt="Jotun logo" loading="lazy"></div><div class="name">Jotun<small>Colour Mirage Painting</small></div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/sigma-paints.png" alt="Sigma Paints logo" loading="lazy"></div><div class="name">Sigma Paints</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/oscar-paints.png" alt="Oscar Paints logo" loading="lazy"></div><div class="name">Oscar Paints</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/al-safi.svg" alt="Al Safi logo" loading="lazy"></div><div class="name">Al Safi</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/tamimi.png" alt="Tamimi Industrial Services logo" loading="lazy"></div><div class="name">Tamimi Industrial Services</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/zain-industries.jpg" alt="Zain Industries logo" loading="lazy"></div><div class="name">Zain Industries</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/sraco.png" alt="SRACO logo" loading="lazy"></div><div class="name">SRACO</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/eastern-cement.png" alt="Eastern Cement logo" loading="lazy"></div><div class="name">Eastern Cement<small>Eastern Province Cement Company</small></div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/yamama-cement.png" alt="Yamama Cement logo" loading="lazy"></div><div class="name">Yamama Cement</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/midad.png" alt="Midad Chemicals logo" loading="lazy"></div><div class="name">Midad Chemicals</div></div>
+          <div class="partner-tile reveal"><div class="logo"><img src="assets/partners/brc.png" alt="BRC Industrial logo" loading="lazy"></div><div class="name">BRC Industrial<small>BRC Industrial (Saudia) Limited</small></div></div>
         </div>
-        <p style="margin-top:34px;"><a href="contact.html" class="btn btn-accent">Become a Partner</a></p>
       </div>
     </section>
 
-    <section class="cta-banner" aria-labelledby="cta-title">
-      <div class="container">
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <h2 id="cta-title" class="heading-lg">Join 100+ satisfied clients.</h2>
         <div>
-          <h2 id="cta-title">Join 100+ Satisfied Clients</h2>
           <p>Experience the reliability that keeps Saudi industry coming back.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn">Become a partner <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </div>
         </div>
-        <a href="contact.html" class="btn">Request a Quote</a>
       </div>
     </section>
   </main>
@@ -90,23 +109,15 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">
-            <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-            <span class="brand-text">
-              <strong>SHORE WAVES</strong>
-              <small>Trading Company &mdash; Chemicals</small>
-            </span>
-          </div>
-          <p>ISO-certified chemical trading company headquartered in Dhahran, serving Saudi industry since 1989.</p>
-          <span class="footer-motto">One Source for Multiple Choice</span>
+          <a class="brand" href="index.html" aria-label="Shore Waves — home"><svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg><span class="brand-word">Shore Waves<small>Trading Company</small></span></a>
+          <p>ISO-certified chemical trading company headquartered in Dhahran. One source for multiple choice, since 1989.</p>
         </div>
         <div>
-          <h3>Quick Links</h3>
+          <h3>Explore</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="industries.html">Industries</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html">Product catalog</a></li>
             <li><a href="partners.html">Partners</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -123,25 +134,27 @@
         <div>
           <h3>Contact</h3>
           <ul>
-            <li><a href="tel:+966138089988">+966-13 808 9988</a></li>
+            <li><a href="tel:+966138089988">+966 13 808 9988</a></li>
             <li><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></li>
             <li>Building 7055, Halfmoon Beach Road,<br>Dhahran 34521-2902, Saudi Arabia</li>
           </ul>
         </div>
       </div>
+      <div class="footer-mark" aria-hidden="true">Shore Waves</div>
       <div class="footer-bottom">
-        &copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.
+        <span>&copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.</span>
+        <span>Dhahran, Kingdom of Saudi Arabia</span>
       </div>
     </div>
   </footer>
 
   <div class="floaters">
     <a href="tel:+966138089988" class="float-call" aria-label="Call us at +966 13 808 9988">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
     <a href="contact.html" class="float-quote">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      <span>Request a Quote</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>Request a quote</span>
     </a>
   </div>
 

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d273d"/><stop offset="0.42" stop-color="#544b60"/><stop offset="0.6" stop-color="#c27a55"/><stop offset="0.67" stop-color="#f0aa62"/><stop offset="0.7" stop-color="#fcd28c"/></linearGradient>
+<radialGradient id="glow" gradientUnits="userSpaceOnUse" cx="1240" cy="682" r="900" gradientTransform="translate(1240 682) scale(1 0.55) translate(-1240 -682)"><stop offset="0" stop-color="#ffc56d" stop-opacity="0.95"/><stop offset="0.25" stop-color="#ffc56d" stop-opacity="0.35"/><stop offset="1" stop-color="#ffc56d" stop-opacity="0"/></radialGradient>
+<linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e1620" stop-opacity="0.35"/><stop offset="0.25" stop-color="#0e1620" stop-opacity="0"/><stop offset="0.7" stop-color="#0e1620" stop-opacity="0"/><stop offset="1" stop-color="#0e1620" stop-opacity="0.55"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.09 0"/></filter>
+<filter id="haze"><feGaussianBlur stdDeviation="1.4"/></filter><filter id="soft" x="-1" y="-1" width="3" height="3"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<rect width="1600" height="702" fill="url(#glow)"/>
+<circle cx="1240" cy="682" r="52" fill="#fff3cc"/>
+
+<path d="M-20 1000L-20.0 690.0Q90.0 690.0 90.0 682.6Q310.0 675.3 310.0 690.7Q530.0 706.2 530.0 691.8Q750.0 677.4 750.0 688.0Q970.0 698.6 970.0 700.5Q1190.0 702.3 1190.0 700.6Q1410.0 698.9 1410.0 690.9L1620 682.9L1620 1000z" fill="#6d5048" opacity="0.95" filter="url(#haze)"/>
+<path d="M-20 1000L-20.0 770.0Q110.0 770.0 110.0 775.8Q370.0 781.5 370.0 787.9Q630.0 794.2 630.0 786.3Q890.0 778.5 890.0 775.3Q1150.0 772.1 1150.0 768.1Q1410.0 764.2 1410.0 764.6L1620 765.1L1620 1000z" fill="#3a3133" opacity="1"/>
+<path d="M80.0 700.0h6.0v190.0h-6.0zM56.0 706.0h54.0v5.0h-54.0zM400.0 700.0h6.0v190.0h-6.0zM376.0 706.0h54.0v5.0h-54.0zM720.0 700.0h6.0v190.0h-6.0zM696.0 706.0h54.0v5.0h-54.0zM1040.0 700.0h6.0v190.0h-6.0zM1016.0 706.0h54.0v5.0h-54.0zM1360.0 700.0h6.0v190.0h-6.0zM1336.0 706.0h54.0v5.0h-54.0z" fill="#151a23" opacity="1"/>
+<path d="M-20.0 880.0h1640.0v16.0h-1640.0zM-20.0 896.0h1640.0v120.0h-1640.0zM560.0 845.0h468.0v-18.2h-468.0zM586.0 826.8V754.0Q586.0 715.0 638.0 715.0H911.0Q950.0 715.0 950.0 754.0V826.8zM963.0 826.8V741.0h52.0l26.0 39.0V826.8zM617.2 863.2a20.8 20.8 0 1 0 41.6 0a20.8 20.8 0 1 0 -41.6 0zM669.2 863.2a20.8 20.8 0 1 0 41.6 0a20.8 20.8 0 1 0 -41.6 0zM851.2 863.2a20.8 20.8 0 1 0 41.6 0a20.8 20.8 0 1 0 -41.6 0zM903.2 863.2a20.8 20.8 0 1 0 41.6 0a20.8 20.8 0 1 0 -41.6 0zM981.2 863.2a20.8 20.8 0 1 0 41.6 0a20.8 20.8 0 1 0 -41.6 0z" fill="#0e1620" opacity="1"/>
+<rect width="1600" height="1000" fill="url(#vignette)"/>
+<rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>

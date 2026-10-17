@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industries We Serve | Shore Waves Trading Company — Chemical Division</title>
   <meta name="description" content="Shore Waves supplies specialized chemicals to 10 industries across Saudi Arabia: water treatment, paint & coating, dairy, electrical, cement, steel, hospitality, automotive, textile, and agriculture.">
+  <meta name="theme-color" content="#f5f4df">
   <meta property="og:title" content="Industries We Serve — Shore Waves Trading Company">
   <meta property="og:description" content="Specialized chemical solutions for 10 industries across the Kingdom of Saudi Arabia.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.shorewaves.com.sa/industries.html">
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,146 +21,144 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
-        <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-        <span class="brand-text">
-          <strong>SHORE WAVES</strong>
-          <small>Trading Company &mdash; Chemicals</small>
-        </span>
-      </a>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="industries.html" class="active" aria-current="page">Industries</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Request a Quote</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="label">Menu</span>
+        <span class="sr-only">Toggle navigation menu</span>
       </button>
+      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg>
+        <span class="brand-word">Shore Waves<small>Chemicals</small></span>
+      </a>
+      <a class="nav-link" href="contact.html"><span class="label">Get a quote</span><span class="label-short">Quote</span> <span aria-hidden="true">&#8599;</span></a>
     </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <div class="container menu-grid">
+        <ul class="menu-links">
+            <li><a href="index.html">Home<span>01</span></a></li>
+            <li><a href="about.html">About<span>02</span></a></li>
+            <li><a href="industries.html" aria-current="page">Industries<span>03</span></a></li>
+            <li><a href="products.html">Products<span>04</span></a></li>
+            <li><a href="partners.html">Partners<span>05</span></a></li>
+            <li><a href="contact.html">Contact<span>06</span></a></li>
+        </ul>
+        <div class="menu-aside">
+          <p>ISO-certified chemical trading, Dhahran. Serving Saudi industry since 1989.</p>
+          <p><a href="tel:+966138089988">+966 13 808 9988</a><br><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></p>
+          <a href="contact.html" class="btn">Request a quote <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <h1>Industries We Serve</h1>
-        <p>Ten sectors, one trusted chemical partner. Browse by industry and jump straight to the products that fit your operation.</p>
+    <section class="hero page" aria-labelledby="page-title">
+      <img class="hero-media" src="assets/scenes/refinery.svg" alt="Refinery columns, storage tanks and a flare stack silhouetted against a sunset">
+      <div class="container hero-inner">
+        <span class="kicker">Industries we serve</span>
+        <h1 id="page-title">Ten sectors.<br>One partner.</h1>
+        <div class="hero-foot">
+          <div></div>
+          <div class="caption-block">
+            <p>Browse by industry and jump straight to the products that fit your operation.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section aria-labelledby="industries-title">
+    <section class="section" aria-labelledby="industries-title">
       <div class="container">
-        <span class="section-kicker">Sectors</span>
-        <h2 id="industries-title" class="section-title">Specialized Chemistry for Every Sector</h2>
-        <p class="section-lead">Each card links to our product catalog, pre-filtered to the most relevant category for that industry.</p>
+        <div class="section-head">
+          <div>
+            <span class="kicker">Sectors</span>
+            <h2 id="industries-title" class="heading">Specialised chemistry for every sector.</h2>
+          </div>
+          <p class="lead">Each card opens our product catalog, pre-filtered to the category most relevant to that industry.</p>
+        </div>
         <div class="card-grid cols-3">
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 7.5 7 13a7 7 0 1 1-14 0c0-5.5 7-13 7-13z"/></svg>
-            </div>
-            <h3>Water Treatment</h3>
-            <p>Specialized chemicals to optimize water quality and treatment efficiency — from coagulants and disinfectants to anti-scalants and membranes.</p>
-            <a href="products.html?filter=water" class="btn btn-accent btn-sm">View Water Treatment Products</a>
+          <article class="card reveal">
+            <span class="card-index">01</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s7 7.5 7 13a7 7 0 1 1-14 0c0-5.5 7-13 7-13z"/></svg></span>
+            <h3>Water treatment</h3>
+            <p>Specialised chemicals to optimise water quality and treatment efficiency — coagulants, disinfectants, anti-scalants and membranes.</p>
+            <a href="products.html?filter=water" class="text-link">Water treatment products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9.5 9.5a2.1 2.1 0 0 1-3-3z"/><path d="M8 13c-3 0-5 2-5 5 0 1-1 2-2 2 1.5 2 4 2 6 2a5 5 0 0 0 5-5"/></svg>
-            </div>
-            <h3>Paint &amp; Coating</h3>
-            <p>High-quality solvents and chemicals to enhance durability, finish, and application performance in paints and coatings.</p>
-            <a href="products.html?filter=solvents" class="btn btn-accent btn-sm">View Solvents</a>
+          <article class="card reveal">
+            <span class="card-index">02</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3l3 3-9.5 9.5a2.1 2.1 0 0 1-3-3z"/><path d="M8 13c-3 0-5 2-5 5 0 1-1 2-2 2 1.5 2 4 2 6 2a5 5 0 0 0 5-5"/></svg></span>
+            <h3>Paint &amp; coating</h3>
+            <p>High-quality solvents and chemicals that improve durability, finish and application performance.</p>
+            <a href="products.html?filter=solvents" class="text-link">Solvents <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8"/><path d="M9 2v4L5 14v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6l-4-8V2"/><path d="M6.5 15h11"/></svg>
-            </div>
-            <h3>Dairy Industry</h3>
-            <p>Hygiene and processing solutions ensuring product quality and consumer safety throughout the dairy production chain.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">03</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8"/><path d="M9 2v4L5 14v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6l-4-8V2"/><path d="M6.5 15h11"/></svg></span>
+            <h3>Dairy</h3>
+            <p>Hygiene and processing solutions ensuring product quality and consumer safety across the dairy chain.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg>
-            </div>
-            <h3>Electrical Industry</h3>
-            <p>Chemicals meeting exacting industry standards for optimal performance in electrical manufacturing and maintenance.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">04</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></span>
+            <h3>Electrical</h3>
+            <p>Chemicals meeting exacting industry standards for electrical manufacturing and maintenance.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l6-4v16"/><path d="M14 20V10l6 3v7"/></svg>
-            </div>
-            <h3>Cement, Ready-mix &amp; Concrete</h3>
-            <p>Additives and chemicals enhancing product properties, workability, and strength for cement and concrete producers.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">05</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l6-4v16"/><path d="M14 20V10l6 3v7"/></svg></span>
+            <h3>Cement, ready-mix &amp; concrete</h3>
+            <p>Additives and chemicals that enhance workability and strength for cement and concrete producers.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M13 5l6 6"/><path d="M3 21h7"/></svg>
-            </div>
-            <h3>Steel &amp; Metal Foundry</h3>
-            <p>Process chemicals like boric acid optimizing production processes, casting quality, and surface finishing.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">06</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M13 5l6 6"/><path d="M3 21h7"/></svg></span>
+            <h3>Steel &amp; metal foundry</h3>
+            <p>Process chemicals like boric acid for production, casting quality and surface finishing.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h1M14 10h1M9 14h1M14 14h1M11 21v-4h2v4"/></svg>
-            </div>
+          <article class="card reveal">
+            <span class="card-index">07</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h1M14 10h1M9 14h1M14 14h1M11 21v-4h2v4"/></svg></span>
             <h3>Hospitality</h3>
-            <p>Cleaning and sanitation chemicals meeting the stringent cleanliness and hygiene standards of hotels and facilities.</p>
-            <a href="products.html?filter=water" class="btn btn-accent btn-sm">View Related Products</a>
+            <p>Cleaning and sanitation chemicals meeting the hygiene standards of hotels and facilities.</p>
+            <a href="products.html?filter=water" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-5l2-5h12l4 5v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="17.5" cy="17" r="2"/><path d="M9.5 17h6"/></svg>
-            </div>
-            <h3>Automotive Industry</h3>
-            <p>Solvents and process chemicals ensuring performance, durability, and safety across automotive applications.</p>
-            <a href="products.html?filter=solvents" class="btn btn-accent btn-sm">View Solvents</a>
+          <article class="card reveal">
+            <span class="card-index">08</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h-2v-5l2-5h12l4 5v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="17.5" cy="17" r="2"/><path d="M9.5 17h6"/></svg></span>
+            <h3>Automotive</h3>
+            <p>Solvents and process chemicals for performance, durability and safety in automotive applications.</p>
+            <a href="products.html?filter=solvents" class="text-link">Solvents <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M4 14h16M9 4v16M14 4v16"/></svg>
-            </div>
-            <h3>Textile Industry</h3>
-            <p>Chemical solutions to enhance processing efficiency, dye uptake, and finished product quality in textiles.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">09</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M4 14h16M9 4v16M14 4v16"/></svg></span>
+            <h3>Textile</h3>
+            <p>Chemical solutions that improve processing efficiency, dye uptake and finished product quality.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 8C12 5 9 2 5 2c0 4 3 7 7 6z"/><path d="M12 12c0-3 3-6 7-6 0 4-3 7-7 6z"/><path d="M7 22h10"/></svg>
-            </div>
-            <h3>Agricultural Sector</h3>
-            <p>Chemicals to boost crop yield and protect against pests — supporting productive, sustainable farming.</p>
-            <a href="products.html?filter=commodity" class="btn btn-accent btn-sm">View Related Products</a>
+          <article class="card reveal">
+            <span class="card-index">10</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M12 8C12 5 9 2 5 2c0 4 3 7 7 6z"/><path d="M12 12c0-3 3-6 7-6 0 4-3 7-7 6z"/><path d="M7 22h10"/></svg></span>
+            <h3>Agriculture</h3>
+            <p>Chemicals that boost crop yield and protect against pests — for productive, sustainable farming.</p>
+            <a href="products.html?filter=commodity" class="text-link">Related products <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
-
         </div>
       </div>
     </section>
 
-    <section class="cta-banner" aria-labelledby="cta-title">
-      <div class="container">
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <h2 id="cta-title" class="heading-lg">Don't see your industry?</h2>
         <div>
-          <h2 id="cta-title">Don't See Your Industry?</h2>
           <p>We source globally — tell us what your operation needs.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn">Contact us <span class="arrow" aria-hidden="true">&#8599;</span></a>
+          </div>
         </div>
-        <a href="contact.html" class="btn">Contact Us</a>
       </div>
     </section>
   </main>
@@ -168,23 +167,15 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">
-            <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-            <span class="brand-text">
-              <strong>SHORE WAVES</strong>
-              <small>Trading Company &mdash; Chemicals</small>
-            </span>
-          </div>
-          <p>ISO-certified chemical trading company headquartered in Dhahran, serving Saudi industry since 1989.</p>
-          <span class="footer-motto">One Source for Multiple Choice</span>
+          <a class="brand" href="index.html" aria-label="Shore Waves — home"><svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg><span class="brand-word">Shore Waves<small>Trading Company</small></span></a>
+          <p>ISO-certified chemical trading company headquartered in Dhahran. One source for multiple choice, since 1989.</p>
         </div>
         <div>
-          <h3>Quick Links</h3>
+          <h3>Explore</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="industries.html">Industries</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html">Product catalog</a></li>
             <li><a href="partners.html">Partners</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -201,25 +192,27 @@
         <div>
           <h3>Contact</h3>
           <ul>
-            <li><a href="tel:+966138089988">+966-13 808 9988</a></li>
+            <li><a href="tel:+966138089988">+966 13 808 9988</a></li>
             <li><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></li>
             <li>Building 7055, Halfmoon Beach Road,<br>Dhahran 34521-2902, Saudi Arabia</li>
           </ul>
         </div>
       </div>
+      <div class="footer-mark" aria-hidden="true">Shore Waves</div>
       <div class="footer-bottom">
-        &copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.
+        <span>&copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.</span>
+        <span>Dhahran, Kingdom of Saudi Arabia</span>
       </div>
     </div>
   </footer>
 
   <div class="floaters">
     <a href="tel:+966138089988" class="float-call" aria-label="Call us at +966 13 808 9988">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
     <a href="contact.html" class="float-quote">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      <span>Request a Quote</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>Request a quote</span>
     </a>
   </div>
 

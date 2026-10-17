@@ -9,19 +9,56 @@
   var navToggle = document.querySelector('.nav-toggle');
   var siteNav = document.getElementById('site-nav');
 
+  function setMenu(open) {
+    siteNav.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
   if (navToggle && siteNav) {
     navToggle.addEventListener('click', function () {
-      var open = siteNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      setMenu(!siteNav.classList.contains('open'));
     });
 
-    // Close the menu when a link is chosen (mobile)
+    // Close the menu when a link is chosen
     siteNav.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') {
-        siteNav.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
+      if (e.target.closest('a')) setMenu(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && siteNav.classList.contains('open')) {
+        setMenu(false);
+        navToggle.focus();
       }
     });
+  }
+
+  /* ---------- Header: transparent over the hero, solid once scrolled ---------- */
+  var header = document.querySelector('.site-header');
+  var floaters = document.querySelector('.floaters');
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle('is-solid', window.scrollY > 40);
+      // Floating call/quote buttons appear once the hero is scrolled past
+      if (floaters) floaters.classList.toggle('show', window.scrollY > window.innerHeight * 0.6);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ---------- Home promo card (dismiss for this visit) ---------- */
+  var promo = document.getElementById('promo-card');
+  if (promo) {
+    try {
+      if (sessionStorage.getItem('sw-promo-dismissed') === '1') promo.hidden = true;
+    } catch (err) { /* storage unavailable */ }
+    var promoClose = promo.querySelector('.promo-close');
+    if (promoClose) {
+      promoClose.addEventListener('click', function () {
+        promo.hidden = true;
+        try { sessionStorage.setItem('sw-promo-dismissed', '1'); } catch (err) { /* storage unavailable */ }
+      });
+    }
   }
 
   /* ---------- Scroll-in reveal animations ---------- */
@@ -164,10 +201,10 @@
           var quoteHref = 'contact.html?product=' + encodeURIComponent(p.name);
           return '<tr>' +
             '<td class="p-name">' + escapeHtml(p.name) + '</td>' +
-            '<td>' + escapeHtml(p.packing) + '</td>' +
-            '<td>' + escapeHtml(p.app) + '</td>' +
+            '<td data-label="Packing">' + escapeHtml(p.packing) + '</td>' +
+            '<td data-label="Use">' + escapeHtml(p.app) + '</td>' +
             '<td><span class="origin-tag">' + escapeHtml(p.origin) + '</span></td>' +
-            '<td><a class="btn btn-accent btn-sm" href="' + quoteHref + '">Request Quote</a></td>' +
+            '<td><a class="btn btn-sm" href="' + quoteHref + '" aria-label="Request a quote for ' + escapeHtml(p.name) + '">Quote <span aria-hidden="true">&#8599;</span></a></td>' +
             '</tr>';
         }).join('');
       }

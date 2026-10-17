@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shore Waves Trading Company — Chemical Division | Trusted Chemical Supply for Saudi Industry</title>
   <meta name="description" content="Shore Waves Trading Company, Dhahran — ISO-certified chemical trading company supplying commodity chemicals, solvents, and water treatment solutions across Saudi Arabia since 1989.">
+  <meta name="theme-color" content="#f5f4df">
   <meta property="og:title" content="Shore Waves Trading Company — Chemical Division">
   <meta property="og:description" content="Delivering Quality Chemicals, Safely and Reliably. ISO-certified chemical supplier serving 100+ clients across the Kingdom of Saudi Arabia.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.shorewaves.com.sa/">
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,194 +21,218 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
-        <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-        <span class="brand-text">
-          <strong>SHORE WAVES</strong>
-          <small>Trading Company &mdash; Chemicals</small>
-        </span>
-      </a>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="industries.html">Industries</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="contact.html" class="btn btn-accent btn-sm nav-cta">Request a Quote</a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="label">Menu</span>
+        <span class="sr-only">Toggle navigation menu</span>
       </button>
+      <a class="brand" href="index.html" aria-label="Shore Waves Trading Company — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg>
+        <span class="brand-word">Shore Waves<small>Chemicals</small></span>
+      </a>
+      <a class="nav-link" href="contact.html"><span class="label">Get a quote</span><span class="label-short">Quote</span> <span aria-hidden="true">&#8599;</span></a>
     </div>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <div class="container menu-grid">
+        <ul class="menu-links">
+            <li><a href="index.html" aria-current="page">Home<span>01</span></a></li>
+            <li><a href="about.html">About<span>02</span></a></li>
+            <li><a href="industries.html">Industries<span>03</span></a></li>
+            <li><a href="products.html">Products<span>04</span></a></li>
+            <li><a href="partners.html">Partners<span>05</span></a></li>
+            <li><a href="contact.html">Contact<span>06</span></a></li>
+        </ul>
+        <div class="menu-aside">
+          <p>ISO-certified chemical trading, Dhahran. Serving Saudi industry since 1989.</p>
+          <p><a href="tel:+966138089988">+966 13 808 9988</a><br><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></p>
+          <a href="contact.html" class="btn">Request a quote <span class="arrow" aria-hidden="true">&#8599;</span></a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
-    <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <span class="hero-badge">Chemicals</span>
-        <h1 id="hero-title">Shore Waves <span class="accent">Trading Company</span></h1>
-        <p class="tagline">Delivering Quality Chemicals, Safely and Reliably &mdash; trusted chemical supply for Saudi industry since 1989.</p>
-        <div class="hero-actions">
-          <a href="products.html" class="btn btn-accent">View Our Products</a>
-          <a href="contact.html" class="btn btn-outline-white">Contact Us</a>
+      <img class="hero-media" src="assets/scenes/coast.svg" alt="Golden-hour view across the Arabian Gulf toward an industrial shoreline, palms in the foreground">
+
+      <aside class="promo-card" id="promo-card" aria-label="New in stock">
+        <button class="promo-close" type="button" aria-label="Dismiss announcement">
+          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11"/></svg>
+        </button>
+        <span class="promo-kicker">New in stock</span>
+        <h2>Phosphoric Acid 85% — Food Grade</h2>
+        <svg class="promo-art" viewBox="0 0 120 84" fill="none" stroke="#fff" stroke-width="1.4" aria-hidden="true">
+          <rect x="6" y="14" width="62" height="58" rx="3"/><path d="M6 28h62M6 43h62M6 58h62M21 14v58M37 14v58M53 14v58"/>
+          <rect x="31" y="8" width="12" height="6" rx="1"/><path d="M2 72h70v8H2z"/>
+          <path d="M82 30h30v46H82z"/><path d="M82 38h30M82 68h30"/><ellipse cx="97" cy="30" rx="15" ry="3"/><circle cx="104" cy="30" r="1.5"/>
+        </svg>
+        <p>1650 kg IBC &amp; 35 kg cans for food and paper industry.</p>
+        <p style="margin-top:16px"><a class="promo-link" href="contact.html?product=Phosphoric%20Acid%2085%25%20Food%20Grade">Request a quote <span aria-hidden="true">&#8599;</span></a></p>
+      </aside>
+
+      <div class="container hero-inner">
+        <span class="kicker">Shore Waves Trading Company — Chemical Division</span>
+        <h1 id="hero-title" class="display">Chemistry, delivered.</h1>
+        <div class="hero-foot">
+          <div class="hero-meta" aria-label="Certifications">
+            <span>ISO 9001</span><span>ISO 14001</span><span>ISO 45001</span><span>Dhahran, KSA</span>
+          </div>
+          <div class="caption-block">
+            <p>Commodity chemicals, solvents and water-treatment programs — sourced worldwide, stored safely and delivered across the Kingdom.</p>
+            <div class="btn-row">
+              <a href="products.html" class="btn btn-light">View products <span class="arrow" aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Motto banner -->
-    <div class="motto-banner" role="note">&ldquo;One Source for Multiple Choice.&rdquo;</div>
+    <div class="band" role="note"><a href="about.html">One source for multiple choice — serving Saudi industry since 1989 <span aria-hidden="true">&#8599;</span></a></div>
 
-    <!-- Intro -->
-    <section aria-labelledby="intro-title">
+    <section class="section" aria-labelledby="intro-title">
       <div class="container split">
         <div class="reveal">
-          <span class="section-kicker">Who We Are</span>
-          <h2 id="intro-title" class="section-title">A Legacy of Trust Since 1989</h2>
-          <p class="section-lead">Shore Waves Trading Company traces its roots back to 1989, when founder <strong>Mr. Saad Al-Shehri</strong> began in the perfume industry in Al Khobar, Eastern Province. In 2014, responding to growing industrial demand, the company expanded into the chemical and trading business.</p>
-          <p class="section-lead">Today, headquartered in <strong>Dhahran</strong>, we import chemicals from around the globe and proudly serve <strong>100+ satisfied clients</strong> across the Kingdom of Saudi Arabia.</p>
-          <a href="about.html" class="btn btn-accent">Read Our Story</a>
+          <span class="kicker">Who we are</span>
+          <h2 id="intro-title" class="heading">A legacy of trust, since 1989.</h2>
         </div>
-        <div class="split-visual reveal">
-          <img class="big-logo" src="assets/logo.svg" alt="Shore Waves logo" width="150" height="150">
+        <div class="reveal">
+          <p class="lead">Shore Waves traces its roots to 1989, when founder <strong>Mr. Saad Al-Shehri</strong> began in the perfume industry in Al Khobar. In 2014, answering growing industrial demand, the company moved into chemicals and trading.</p>
+          <p class="lead">Today, from our base in <strong>Dhahran</strong>, we import chemicals from around the globe and serve <strong>100+ clients</strong> across the Kingdom of Saudi Arabia.</p>
+          <div class="btn-row"><a href="about.html" class="btn">Read our story <span class="arrow" aria-hidden="true">&#8599;</span></a></div>
+        </div>
+      </div>
+
+      <div class="container mt-56">
+        <div class="stats-grid" aria-label="Company statistics">
+          <div class="stat reveal"><div class="stat-num" data-target="35" data-suffix="+">35+</div><div class="stat-label">Years of legacy</div></div>
+          <div class="stat reveal"><div class="stat-num" data-target="100" data-suffix="+">100+</div><div class="stat-label">Satisfied clients</div></div>
+          <div class="stat reveal"><div class="stat-num" data-target="40" data-suffix="+">40+</div><div class="stat-label">Products stocked</div></div>
+          <div class="stat reveal"><div class="stat-num" data-target="10" data-suffix="">10</div><div class="stat-label">Industries served</div></div>
         </div>
       </div>
     </section>
 
-    <!-- Stats counters -->
-    <section class="stats" aria-label="Company statistics">
+    <section class="photo-band" aria-labelledby="safety-title">
+      <img class="hero-media" src="assets/scenes/depot.svg" alt="Drums and IBC containers silhouetted at a chemical depot at dusk">
       <div class="container">
-        <div class="stats-grid">
-          <div class="reveal">
-            <div class="stat-num" data-target="35" data-suffix="+">0</div>
-            <div class="stat-label">Years of Legacy</div>
+        <div class="photo-band-grid">
+          <div>
+            <span class="kicker" style="color:var(--cream-80)">Safety &amp; compliance</span>
+            <h2 id="safety-title" class="heading-lg">Safety first. Always.</h2>
           </div>
-          <div class="reveal">
-            <div class="stat-num" data-target="100" data-suffix="+">0</div>
-            <div class="stat-label">Satisfied Clients</div>
-          </div>
-          <div class="reveal">
-            <div class="stat-num" data-target="40" data-suffix="+">0</div>
-            <div class="stat-label">Products Stocked</div>
-          </div>
-          <div class="reveal">
-            <div class="stat-num" data-target="10" data-suffix="">0</div>
-            <div class="stat-label">Industries Served</div>
+          <div>
+            <div class="caption-block" style="max-width:none">
+              <p>Chemical buyers demand safe handling and full compliance. Our Dhahran facility is built for both.</p>
+            </div>
+            <ul class="fact-list mt-56">
+              <li><span class="n">01</span> DG &amp; non-DG chemicals stored separately</li>
+              <li><span class="n">02</span> Modern fire suppression systems</li>
+              <li><span class="n">03</span> 24/7 CCTV surveillance</li>
+              <li><span class="n">04</span> Closed, secure warehouse facility</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="section-soft" aria-labelledby="why-title">
+    <section class="section" aria-labelledby="why-title">
       <div class="container">
-        <span class="section-kicker">Our Pillars</span>
-        <h2 id="why-title" class="section-title">Why Choose Us</h2>
-        <p class="section-lead">Four commitments behind every drum, can, and IBC we deliver.</p>
+        <div class="section-head">
+          <div>
+            <span class="kicker">Our pillars</span>
+            <h2 id="why-title" class="heading">Why industry chooses us.</h2>
+          </div>
+          <p class="lead">Four commitments behind every drum, can and IBC we deliver.</p>
+        </div>
         <div class="card-grid cols-4">
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Safety &amp; Compliance</h3>
-            <p>Segregated DG / Non-DG storage, modern fire suppression, and strict handling protocols on every shipment.</p>
+          <article class="card reveal">
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <h3>Safety &amp; compliance</h3>
+            <p>Segregated DG / non-DG storage, modern fire suppression and strict handling protocols on every shipment.</p>
           </article>
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l1.5 9-5-3-5 3 1.5-9"/></svg>
-            </div>
-            <h3>Quality Assured</h3>
+          <article class="card reveal">
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l1.5 9-5-3-5 3 1.5-9"/></svg></span>
+            <h3>Quality assured</h3>
             <p>ISO 9001, 14001 &amp; 45001 certified management systems guarantee consistent, documented quality.</p>
           </article>
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="12" rx="1"/><path d="M15 10h4l3 4v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
-            </div>
-            <h3>Kingdom-Wide Delivery</h3>
-            <p>Reliable logistics from our Dhahran hub to every corner of Saudi Arabia, on time and intact.</p>
+          <article class="card reveal">
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="12" rx="1"/><path d="M15 10h4l3 4v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span>
+            <h3>Kingdom-wide delivery</h3>
+            <p>Reliable logistics from our Dhahran hub to every corner of Saudi Arabia — on time and intact.</p>
           </article>
-          <article class="card accent-top reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-            </div>
-            <h3>One Source for Multiple Choice</h3>
-            <p>Commodity chemicals, solvents, treatment programs, and dosing equipment — all from a single supplier.</p>
+          <article class="card reveal">
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+            <h3>One source</h3>
+            <p>Commodity chemicals, solvents, treatment programs and dosing equipment — all from a single supplier.</p>
           </article>
         </div>
-        <p style="margin-top:34px;"><a href="contact.html" class="btn btn-accent">Request a Quote</a></p>
       </div>
     </section>
 
-    <!-- Trust strip -->
-    <section class="trust" aria-labelledby="trust-title">
+    <section class="section tight" aria-labelledby="cert-title">
       <div class="container">
-        <h2 id="trust-title" class="section-title on-dark">Safety First. Always.</h2>
-        <p class="section-lead" style="color:rgba(255,255,255,0.78);">Chemical buyers demand safe handling and full compliance. We deliver both — certified by LEMS Certifications.</p>
-        <div class="trust-grid">
-          <div class="iso-badge reveal">
-            <div class="iso-ring" aria-hidden="true">ISO</div>
-            <h3>ISO 9001:2015</h3>
-            <p>Quality Management System</p>
+        <div class="feature reveal">
+          <span class="kicker">Accreditation</span>
+          <h2 id="cert-title" class="heading">Certified by LEMS. Audited for quality, environment and safety.</h2>
+        <div class="iso-grid">
+          <div class="iso reveal">
+            <div class="iso-num">9001</div>
+            <div class="iso-year">ISO 9001:2015</div>
+            <h3>Quality Management</h3>
+            <p>Consistent processes, documented quality and continuous improvement in everything we supply.</p>
           </div>
-          <div class="iso-badge reveal">
-            <div class="iso-ring" aria-hidden="true">ISO</div>
-            <h3>ISO 14001:2015</h3>
-            <p>Environmental Management System</p>
+          <div class="iso reveal">
+            <div class="iso-num">14001</div>
+            <div class="iso-year">ISO 14001:2015</div>
+            <h3>Environmental Management</h3>
+            <p>Responsible sourcing, storage and distribution of every chemical we handle.</p>
           </div>
-          <div class="iso-badge reveal">
-            <div class="iso-ring" aria-hidden="true">ISO</div>
-            <h3>ISO 45001:2018</h3>
-            <p>Occupational Health &amp; Safety</p>
+          <div class="iso reveal">
+            <div class="iso-num">45001</div>
+            <div class="iso-year">ISO 45001:2018</div>
+            <h3>Health &amp; Safety</h3>
+            <p>Protecting our people, our partners and every site we deliver to.</p>
           </div>
         </div>
-        <ul class="safety-facts">
-          <li><span class="dot" aria-hidden="true"></span> DG &amp; Non-DG chemicals stored separately</li>
-          <li><span class="dot" aria-hidden="true"></span> Modern fire suppression systems</li>
-          <li><span class="dot" aria-hidden="true"></span> 24/7 CCTV surveillance</li>
-          <li><span class="dot" aria-hidden="true"></span> Closed, secure warehouse facility</li>
-        </ul>
+        </div>
       </div>
     </section>
 
-    <!-- Explore preview cards -->
-    <section aria-labelledby="explore-title">
+    <section class="section" aria-labelledby="explore-title">
       <div class="container">
-        <span class="section-kicker">Explore</span>
-        <h2 id="explore-title" class="section-title">What We Offer</h2>
-        <p class="section-lead">Browse by industry, dive into the full catalog, or meet the companies that trust us.</p>
+        <div class="section-head">
+          <div>
+            <span class="kicker">Explore</span>
+            <h2 id="explore-title" class="heading">What we offer.</h2>
+          </div>
+          <p class="lead">Browse by industry, search the full catalog, or meet the companies that rely on us.</p>
+        </div>
         <div class="card-grid cols-3">
           <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l6-4v16"/><path d="M14 20V10l6 3v7"/></svg>
-            </div>
-            <h3>10 Industries Served</h3>
-            <p>From water treatment and paints to cement, steel, hospitality, and agriculture — specialized chemistry for every sector.</p>
-            <a href="industries.html" class="btn btn-accent btn-sm">Browse Industries</a>
+            <span class="card-index">01</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l6-4v16"/><path d="M14 20V10l6 3v7"/></svg></span>
+            <h3>10 industries served</h3>
+            <p>From water treatment and paints to cement, steel, hospitality and agriculture — specialised chemistry for every sector.</p>
+            <a href="industries.html" class="text-link">Browse industries <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 9a3 3 0 0 1-3 4H8a3 3 0 0 1-3-4l4-9z"/><path d="M7 14h10"/></svg>
-            </div>
-            <h3>40+ Products Stocked</h3>
-            <p>Commodity chemicals, solvents, boiler and chiller treatments, R.O. anti-scalants, membranes, and dosing pumps — searchable and filterable.</p>
-            <a href="products.html" class="btn btn-accent btn-sm">View Product Catalog</a>
+            <span class="card-index">02</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v4l4 9a3 3 0 0 1-3 4H8a3 3 0 0 1-3-4l4-9z"/><path d="M7 14h10"/></svg></span>
+            <h3>40+ products stocked</h3>
+            <p>Commodity chemicals, solvents, boiler and chiller treatments, R.O. anti-scalants, membranes and dosing pumps.</p>
+            <a href="products.html" class="text-link">View the catalog <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
           <article class="card reveal">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Trusted Partners</h3>
-            <p>Weatherford, Jotun, Sigma Paints, SRACO, Yamama Cement, and many more rely on Shore Waves for consistent supply.</p>
-            <a href="partners.html" class="btn btn-accent btn-sm">Meet Our Partners</a>
+            <span class="card-index">03</span>
+            <span class="icon-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h3>Trusted partners</h3>
+            <p>Weatherford, Jotun, Sigma Paints, SRACO, Yamama Cement and many more rely on Shore Waves for steady supply.</p>
+            <a href="partners.html" class="text-link">Meet our partners <span class="arrow" aria-hidden="true">&#8599;</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Partner marquee -->
     <div class="marquee" aria-label="Our business partners">
       <div class="marquee-track">
         <span>Weatherford</span><span>Jotun</span><span>Sigma Paints</span><span>SRACO</span><span>Yamama Cement</span><span>Eastern Cement</span><span>Al Safi</span><span>Tamimi Industrial Services</span><span>Zain Industries</span><span>Midad Chemicals</span><span>Oscar Paints</span><span>BRC Industrial</span>
@@ -215,40 +240,33 @@
       </div>
     </div>
 
-    <!-- CTA banner -->
-    <section class="cta-banner" aria-labelledby="cta-title">
-      <div class="container">
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <h2 id="cta-title" class="heading-lg">Let's work together.</h2>
         <div>
-          <h2 id="cta-title">Let's Work Together</h2>
           <p>Tell us what you need — we'll quote it fast and deliver it safely.</p>
+          <div class="btn-row">
+            <a href="contact.html" class="btn">Request a quote <span class="arrow" aria-hidden="true">&#8599;</span></a>
+            <a href="tel:+966138089988" class="btn">Call +966 13 808 9988</a>
+          </div>
         </div>
-        <a href="contact.html" class="btn">Request a Quote</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">
-            <img class="brand-logo" src="assets/logo.svg" alt="" width="46" height="46">
-            <span class="brand-text">
-              <strong>SHORE WAVES</strong>
-              <small>Trading Company &mdash; Chemicals</small>
-            </span>
-          </div>
-          <p>ISO-certified chemical trading company headquartered in Dhahran, serving Saudi industry since 1989.</p>
-          <span class="footer-motto">One Source for Multiple Choice</span>
+          <a class="brand" href="index.html" aria-label="Shore Waves — home"><svg class="brand-mark" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="16" cy="16" r="15"/><path d="M5 13.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/><path d="M5 19.5c3.7-3 7.3 3 11 0s7.3-3 11 0"/></svg><span class="brand-word">Shore Waves<small>Trading Company</small></span></a>
+          <p>ISO-certified chemical trading company headquartered in Dhahran. One source for multiple choice, since 1989.</p>
         </div>
         <div>
-          <h3>Quick Links</h3>
+          <h3>Explore</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="industries.html">Industries</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="products.html">Product catalog</a></li>
             <li><a href="partners.html">Partners</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -265,26 +283,27 @@
         <div>
           <h3>Contact</h3>
           <ul>
-            <li><a href="tel:+966138089988">+966-13 808 9988</a></li>
+            <li><a href="tel:+966138089988">+966 13 808 9988</a></li>
             <li><a href="mailto:sales@shorewaves.com.sa">sales@shorewaves.com.sa</a></li>
             <li>Building 7055, Halfmoon Beach Road,<br>Dhahran 34521-2902, Saudi Arabia</li>
           </ul>
         </div>
       </div>
+      <div class="footer-mark" aria-hidden="true">Shore Waves</div>
       <div class="footer-bottom">
-        &copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.
+        <span>&copy; <span id="footer-year">2026</span> Shore Waves Trading Company — Chemical Division. All rights reserved.</span>
+        <span>Dhahran, Kingdom of Saudi Arabia</span>
       </div>
     </div>
   </footer>
 
-  <!-- Floating actions -->
   <div class="floaters">
     <a href="tel:+966138089988" class="float-call" aria-label="Call us at +966 13 808 9988">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
     <a href="contact.html" class="float-quote">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      <span>Request a Quote</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span>Request a quote</span>
     </a>
   </div>
 
